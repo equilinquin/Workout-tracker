@@ -19,6 +19,11 @@ mongoose.connect(MONGODB_URI || "mongodb://workout:tracker1@ds329058.mlab.com:29
   useFindAndModify: false
 });
 
+// mongoose.connect(MONGODB_URI || "mongodb://localhost:3000", {
+//   useNewUrlParser: true,
+//   useFindAndModify: false
+// });
+
 // routes
 require("./routes/html.js")(app);
 require("./routes/apiRoutes.js")(app);
